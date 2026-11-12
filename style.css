@@ -1,0 +1,192 @@
+/* ===== Reset e base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf2ff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+    padding: 30px 20px 10px;
+}
+
+header h1 {
+    color: #174ea6;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header h3 {
+    color: #174ea6;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ===== Main card ===== */
+main {
+    background-color: #fff;
+    width: 100%;
+    max-width: 380px;
+    margin: 20px auto 30px;
+    padding: 35px 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+main h2 {
+    color: #174ea6;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+main > p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* ===== Formulários ===== */
+form p {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #174ea6;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    background-color: #174ea6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c3978;
+}
+
+/* ===== Links e hr ===== */
+a {
+    color: #174ea6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 22px 0;
+}
+
+/* ===== Página de sucesso ===== */
+body.sucesso main {
+    margin-top: 80px;
+}
+
+body.sucesso h1 {
+    color: #174ea6;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+body.sucesso h2 {
+    color: #174ea6;
+    margin-bottom: 12px;
+}
+
+body.sucesso p {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.botao-login {
+    display: inline-block;
+    background-color: #174ea6;
+    color: #fff !important;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    margin-top: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.botao-login:hover {
+    background-color: #0c3978;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    color: #174ea6;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+/* ===== Página recuperar senha ===== */
+.aviso {
+    background-color: #f0f7ff;
+    border: 1px solid #c5d8f5;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
