@@ -1,250 +1,401 @@
+/* Configurações gerais */
 * {
     margin: 0;
+    /* Remove as margens */
     padding: 0;
+    /* Remove os espaços internos */
     box-sizing: border-box;
+    /* Facilita o ajuste dos tamanhos */
 }
 
+/* Corpo da página */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* Fonte utilizada */
     background-color: #eaf2ff;
+    /* Cor de fundo */
     color: #222;
+    /* Cor dos textos */
     min-height: 100vh;
+    /* Ocupa pelo menos a altura da tela */
     display: flex;
+    /* Organiza os elementos */
     flex-direction: column;
+    /* Deixa os elementos em coluna */
 }
 
+/* Cabeçalho */
 header {
     text-align: center;
+    /* Centraliza os textos */
     padding: 25px 20px 15px;
+    /* Espaçamento interno */
     color: #174ea6;
+    /* Cor do texto */
 }
 
 header h1 {
     font-size: 2rem;
+    /* Tamanho do título */
     margin-bottom: 6px;
+    /* Espaço abaixo do título */
 }
 
 header p {
     font-size: 1rem;
+    /* Tamanho do parágrafo */
     color: #555;
+    /* Cor do texto */
 }
 
+/* Menu de navegação */
 nav {
     background-color: #174ea6;
+    /* Fundo azul */
     padding: 14px;
+    /* Espaçamento interno */
     text-align: center;
+    /* Centraliza os links */
 }
 
 nav a {
     color: white;
+    /* Cor dos links */
     text-decoration: none;
+    /* Remove o sublinhado */
     margin: 0 14px;
+    /* Espaço entre os links */
     font-size: 0.95rem;
+    /* Tamanho da letra */
     transition: opacity 0.2s;
+    /* Suaviza a mudança de transparência */
 }
 
 nav a:hover {
     text-decoration: underline;
+    /* Coloca sublinhado ao passar o mouse */
     opacity: 0.9;
+    /* Deixa o link um pouco transparente */
 }
 
+/* Conteúdo principal */
 main {
     width: 90%;
+    /* Ocupa 90% da largura disponível */
     max-width: 1100px;
+    /* Limita a largura máxima */
     margin: 0 auto;
+    /* Centraliza o conteúdo */
     flex: 1;
+    /* Ocupa o espaço disponível da página */
 }
 
+/* Parte de boas-vindas */
 .boas-vindas {
     background-color: white;
+    /* Fundo branco */
     text-align: center;
+    /* Centraliza os textos */
     padding: 40px 30px;
+    /* Espaçamento interno */
     margin-top: 30px;
+    /* Espaço acima */
     border-radius: 12px;
+    /* Arredonda os cantos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* Adiciona uma sombra leve */
 }
 
 .boas-vindas h2 {
     color: #174ea6;
+    /* Cor do título */
     margin-bottom: 12px;
+    /* Espaço abaixo */
 }
 
 .boas-vindas p {
     color: #555;
+    /* Cor do parágrafo */
     margin-bottom: 18px;
+    /* Espaço abaixo do texto */
     line-height: 1.5;
+    /* Espaçamento entre as linhas */
 }
 
+/* Botão principal */
 .botao {
     display: inline-block;
+    /* Permite ajustar o botão */
     background-color: #174ea6;
+    /* Fundo azul */
     color: white;
+    /* Texto branco */
     padding: 12px 28px;
+    /* Espaçamento interno */
     text-decoration: none;
+    /* Remove o sublinhado */
     border-radius: 6px;
+    /* Arredonda os cantos */
     font-weight: bold;
+    /* Deixa o texto em negrito */
     transition: background-color 0.2s;
+    /* Suaviza a mudança de cor */
 }
 
 .botao:hover {
     background-color: #0c3978;
+    /* Escurece ao passar o mouse */
 }
 
+/* Área de pesquisa */
 .pesquisa {
     text-align: center;
+    /* Centraliza os elementos */
     padding: 30px 15px;
+    /* Espaçamento interno */
 }
 
 .pesquisa h2 {
     color: #174ea6;
+    /* Cor do título */
     margin-bottom: 16px;
+    /* Espaço abaixo */
 }
 
 .pesquisa input,
 .pesquisa select {
     padding: 12px 14px;
+    /* Espaço dentro dos campos */
     margin: 6px;
+    /* Espaço entre os campos */
     border: 1px solid #ccc;
+    /* Borda cinza */
     border-radius: 6px;
+    /* Cantos arredondados */
     font-size: 0.95rem;
+    /* Tamanho da letra */
     min-width: 200px;
+    /* Largura mínima dos campos */
 }
 
 .pesquisa button {
     padding: 12px 24px;
+    /* Espaçamento interno */
     background-color: #174ea6;
+    /* Fundo azul */
     color: white;
+    /* Texto branco */
     border: none;
+    /* Remove a borda */
     border-radius: 6px;
+    /* Arredonda os cantos */
     cursor: pointer;
+    /* Mostra a mãozinha do mouse */
     font-size: 0.95rem;
+    /* Tamanho da letra */
     font-weight: bold;
+    /* Texto em negrito */
     transition: background-color 0.2s;
+    /* Suaviza a mudança de cor */
 }
 
 .pesquisa button:hover {
     background-color: #0c3978;
+    /* Escurece o botão ao passar o mouse */
 }
 
+/* Área das vagas */
 #vagas {
     text-align: center;
+    /* Centraliza os textos */
     padding: 25px 15px;
+    /* Espaçamento interno */
 }
 
 #vagas h2,
 .areas h2 {
     color: #174ea6;
+    /* Cor dos títulos */
     margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
+/* Organiza os cartões de vagas */
 .vagas-container {
     display: flex;
+    /* Coloca os cartões lado a lado */
     justify-content: center;
+    /* Centraliza os cartões */
     gap: 20px;
+    /* Espaço entre os cartões */
     flex-wrap: wrap;
+    /* Permite quebrar a linha se faltar espaço */
 }
 
+/* Cartões das vagas */
 .vaga {
     background-color: white;
+    /* Fundo branco */
     width: 260px;
+    /* Largura do cartão */
     padding: 22px;
+    /* Espaçamento interno */
     border: 1px solid #d5e1ec;
+    /* Borda azul clara */
     border-radius: 10px;
+    /* Arredonda os cantos */
     text-align: left;
+    /* Alinha os textos à esquerda */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    /* Sombra leve */
     transition: transform 0.2s, box-shadow 0.2s;
+    /* Suaviza os efeitos */
 }
 
 .vaga:hover {
     transform: translateY(-3px);
+    /* Levanta um pouco o cartão */
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    /* Aumenta a sombra */
 }
 
 .vaga h3 {
     color: #174ea6;
+    /* Cor do título da vaga */
     margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 .vaga p {
     margin-bottom: 6px;
+    /* Espaço entre os parágrafos */
     font-size: 0.9rem;
+    /* Tamanho do texto */
     color: #444;
+    /* Cor do texto */
 }
 
 .vaga a {
     display: inline-block;
+    /* Permite ajustar o link */
     margin-top: 12px;
+    /* Espaço acima */
     color: #174ea6;
+    /* Cor azul do link */
     text-decoration: none;
+    /* Remove o sublinhado */
     font-weight: bold;
+    /* Deixa em negrito */
     font-size: 0.9rem;
+    /* Tamanho da letra */
 }
 
 .vaga a:hover {
     text-decoration: underline;
+    /* Sublinha ao passar o mouse */
 }
 
+/* Área das categorias */
 .areas {
     text-align: center;
+    /* Centraliza os textos */
     padding: 30px 15px;
+    /* Espaçamento interno */
 }
 
-.areas > p {
+.areas>p {
     color: #555;
+    /* Cor do parágrafo */
     margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
+/* Organiza os cartões das áreas */
 .areas-container {
     display: flex;
+    /* Coloca as áreas lado a lado */
     justify-content: center;
+    /* Centraliza os cartões */
     gap: 16px;
+    /* Espaço entre eles */
     flex-wrap: wrap;
+    /* Permite quebrar a linha */
 }
 
+/* Cartões das áreas */
 .area {
     background-color: white;
+    /* Fundo branco */
     padding: 22px 28px;
+    /* Espaçamento interno */
     border-radius: 10px;
+    /* Arredonda os cantos */
     border: 1px solid #d5e1ec;
+    /* Borda azul clara */
     font-weight: bold;
+    /* Texto em negrito */
     color: #174ea6;
+    /* Cor azul do texto */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    /* Sombra leve */
     transition: transform 0.2s;
+    /* Suaviza o movimento */
 }
 
 .area:hover {
     transform: translateY(-2px);
+    /* Move o cartão um pouco para cima */
 }
 
+/* Parte sobre o site */
 .sobre {
     background-color: white;
+    /* Fundo branco */
     padding: 30px;
+    /* Espaçamento interno */
     margin: 20px 0 40px;
+    /* Espaço em cima e embaixo */
     border-radius: 12px;
+    /* Arredonda os cantos */
     text-align: center;
+    /* Centraliza os textos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* Sombra leve */
 }
 
 .sobre h2 {
     color: #174ea6;
+    /* Cor do título */
     margin-bottom: 14px;
+    /* Espaço abaixo */
 }
 
 .sobre p {
     color: #555;
+    /* Cor do parágrafo */
     line-height: 1.6;
+    /* Espaço entre as linhas */
     max-width: 700px;
+    /* Limita a largura do texto */
     margin: 0 auto;
+    /* Centraliza o parágrafo */
 }
 
+/* Rodapé */
 footer {
     text-align: center;
+    /* Centraliza os textos */
     padding: 20px;
+    /* Espaçamento interno */
     color: #174ea6;
+    /* Cor do texto */
     font-size: 0.85rem;
+    /* Tamanho da letra */
     margin-top: auto;
+    /* Mantém o rodapé no final da página */
 }
 
 footer p {
     margin-bottom: 4px;
+    /* Espaço abaixo do parágrafo */
 }

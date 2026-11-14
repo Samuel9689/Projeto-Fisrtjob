@@ -1,207 +1,328 @@
+/* Configurações gerais da página */
 * {
     margin: 0;
+    /* Remove as margens */
     padding: 0;
+    /* Remove os espaços internos */
     box-sizing: border-box;
+    /* Facilita o ajuste dos tamanhos */
 }
 
+/* Corpo da página */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* Fonte utilizada */
     background-color: #eaf2ff;
+    /* Cor de fundo */
     color: #333;
+    /* Cor dos textos */
     min-height: 100vh;
+    /* Ocupa pelo menos a altura da tela */
     display: flex;
+    /* Organiza os elementos */
     flex-direction: column;
+    /* Deixa os elementos em coluna */
     text-align: center;
+    /* Centraliza os textos */
 }
 
+/* Cabeçalho */
 header {
     padding: 30px 20px 10px;
+    /* Espaçamento interno */
 }
 
 header h1 {
     color: #174ea6;
+    /* Cor do título */
     font-size: 2rem;
+    /* Tamanho da letra */
     margin-bottom: 8px;
+    /* Espaço abaixo do título */
 }
 
 header h3 {
     color: #174ea6;
+    /* Cor do subtítulo */
     font-weight: normal;
+    /* Remove o negrito */
     margin-bottom: 6px;
+    /* Espaço abaixo do texto */
 }
 
 header p {
     color: #555;
+    /* Cor do parágrafo */
     font-size: 0.95rem;
+    /* Tamanho do texto */
 }
 
+/* Parte principal da página */
 main {
     background-color: #fff;
+    /* Fundo branco */
     width: 100%;
+    /* Ocupa toda a largura disponível */
     max-width: 380px;
+    /* Limita a largura */
     margin: 20px auto 30px;
+    /* Centraliza e adiciona espaço */
     padding: 35px 30px;
+    /* Espaçamento interno */
     border: 1px solid #ccc;
+    /* Borda cinza */
     border-radius: 15px;
+    /* Arredonda os cantos */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    /* Sombra */
 }
 
 main h2 {
     color: #174ea6;
+    /* Cor do título */
     margin-bottom: 8px;
+    /* Espaço abaixo */
     font-size: 1.4rem;
+    /* Tamanho da letra */
 }
 
 main h3 {
     color: #174ea6;
+    /* Cor do subtítulo */
     margin-bottom: 8px;
+    /* Espaço abaixo */
     font-size: 1.1rem;
+    /* Tamanho da letra */
 }
 
-main > p {
+main>p {
     color: #555;
+    /* Cor do parágrafo */
     margin-bottom: 20px;
+    /* Espaço abaixo */
     font-size: 0.95rem;
+    /* Tamanho do texto */
 }
 
+/* Formulário */
 form p {
     margin-bottom: 18px;
+    /* Espaço entre os campos */
     text-align: left;
+    /* Alinha o texto à esquerda */
 }
 
 label {
     display: block;
+    /* Deixa cada label em uma linha */
     text-align: left;
+    /* Alinha à esquerda */
     margin-bottom: 6px;
+    /* Espaço abaixo do label */
     font-size: 0.9rem;
+    /* Tamanho da letra */
     color: #333;
+    /* Cor do texto */
 }
 
+/* Campos de preenchimento */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
+    /* Ocupa toda a largura */
     padding: 12px 14px;
+    /* Espaço dentro do campo */
     border: 1px solid #ccc;
+    /* Borda cinza */
     border-radius: 6px;
+    /* Cantos arredondados */
     font-size: 0.95rem;
+    /* Tamanho do texto */
 }
 
+/* Quando clica em um campo */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
+    /* Remove o contorno padrão */
     border-color: #174ea6;
+    /* Muda a borda para azul */
 }
 
-/* Checkbox "Lembrar de mim" */
+/* Opção lembrar de mim */
 .lembrar {
     display: flex;
+    /* Organiza os elementos lado a lado */
     align-items: center;
+    /* Alinha os elementos */
     gap: 6px;
+    /* Espaço entre eles */
 }
 
 .lembrar label {
     display: inline;
+    /* Deixa o texto ao lado do checkbox */
     margin-bottom: 0;
+    /* Remove a margem de baixo */
     cursor: pointer;
+    /* Mostra a mãozinha do mouse */
 }
 
 input[type="checkbox"] {
     margin: 0;
+    /* Remove a margem */
     vertical-align: middle;
+    /* Alinha com o texto */
 }
 
+/* Botão de enviar */
 input[type="submit"] {
     width: 100%;
+    /* Ocupa toda a largura */
     padding: 13px;
+    /* Espaçamento interno */
     background-color: #174ea6;
+    /* Fundo azul */
     color: #fff;
+    /* Texto branco */
     border: none;
+    /* Remove a borda */
     border-radius: 6px;
+    /* Arredonda os cantos */
     font-size: 1rem;
+    /* Tamanho da letra */
     font-weight: bold;
+    /* Deixa em negrito */
     cursor: pointer;
+    /* Muda o cursor */
     margin-top: 8px;
+    /* Espaço acima do botão */
     transition: background-color 0.2s;
+    /* Suaviza a mudança de cor */
 }
 
 input[type="submit"]:hover {
     background-color: #0c3978;
+    /* Escurece ao passar o mouse */
 }
 
+/* Links */
 a {
     color: #174ea6;
+    /* Cor dos links */
     text-decoration: none;
+    /* Remove o sublinhado */
 }
 
 a:hover {
     text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
 }
 
 .link-extra {
     margin-top: 12px;
+    /* Espaço acima dos links */
 }
 
+/* Linha que separa os conteúdos */
 hr {
     border: none;
+    /* Remove a borda padrão */
     border-top: 1px solid #ddd;
+    /* Cria uma linha cinza */
     margin: 22px 0;
+    /* Espaço acima e abaixo */
 }
 
+/* Estilos da página de sucesso */
 body.sucesso main {
     margin-top: 80px;
+    /* Espaço acima do conteúdo */
 }
 
 body.sucesso h1 {
     color: #174ea6;
+    /* Cor do título */
     font-size: 3.5rem;
+    /* Aumenta o tamanho da letra */
     margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 body.sucesso h2 {
     color: #174ea6;
+    /* Cor do subtítulo */
     margin-bottom: 12px;
+    /* Espaço abaixo */
 }
 
 body.sucesso p {
     color: #444;
+    /* Cor dos parágrafos */
     margin-bottom: 10px;
+    /* Espaço entre os textos */
 }
 
+/* Botão para voltar ao login */
 .botao-login {
     display: inline-block;
+    /* Permite ajustar o botão */
     background-color: #174ea6;
+    /* Fundo azul */
     color: #fff !important;
+    /* Texto branco */
     padding: 12px 28px;
+    /* Espaçamento interno */
     border-radius: 6px;
+    /* Cantos arredondados */
     text-decoration: none !important;
+    /* Remove o sublinhado */
     margin-top: 18px;
+    /* Espaço acima */
     font-weight: bold;
+    /* Texto em negrito */
     transition: background-color 0.2s;
+    /* Suaviza a mudança de cor */
 }
 
 .botao-login:hover {
     background-color: #0c3978;
+    /* Muda a cor ao passar o mouse */
 }
 
+/* Rodapé */
 footer {
     margin-top: auto;
+    /* Mantém o rodapé no final da página */
     padding: 20px;
+    /* Espaçamento interno */
     color: #174ea6;
+    /* Cor do texto */
     font-size: 0.85rem;
+    /* Tamanho da letra */
 }
 
 footer p {
     margin-bottom: 4px;
+    /* Espaço abaixo do parágrafo */
 }
 
+/* Caixa de aviso */
 .aviso {
     background-color: #f0f7ff;
+    /* Fundo azul claro */
     border: 1px solid #c5d8f5;
+    /* Borda azul clara */
     border-radius: 8px;
+    /* Cantos arredondados */
     padding: 14px;
+    /* Espaço interno */
     margin-bottom: 20px;
+    /* Espaço abaixo */
     font-size: 0.9rem;
+    /* Tamanho da letra */
     color: #333;
+    /* Cor do texto */
 }
