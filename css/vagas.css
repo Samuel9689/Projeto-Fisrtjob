@@ -1,0 +1,179 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf2ff;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #eaf2ff;
+}
+
+header h1 {
+    color: #1c50a5;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 5px;
+    color: #444;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #1c50a5;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 30px;
+}
+
+/* Título da página */
+.titulo-pagina {
+    background-color: white;
+    text-align: center;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-pagina h2 {
+    color: #1c50a5;
+    margin-bottom: 12px;
+}
+
+.titulo-pagina p {
+    color: #444;
+}
+
+/* Pesquisa */
+.pesquisa {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pesquisa h2 {
+    color: #1c50a5;
+    margin-bottom: 22px;
+}
+
+.pesquisa form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pesquisa input,
+.pesquisa select {
+    padding: 12px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+}
+
+button {
+    background-color: #1c50a5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #153d80;
+}
+
+/* Lista de vagas */
+.vagas {
+    text-align: center;
+}
+
+.vagas h2 {
+    color: #1c50a5;
+    margin-bottom: 20px;
+}
+
+.container-vagas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Cartões */
+.card-vaga {
+    background-color: white;
+    width: 260px;
+    padding: 22px;
+    text-align: left;
+    border: 1px solid #d5dfed;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+.card-vaga:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+.card-vaga h3 {
+    color: #1c50a5;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.card-vaga p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-vaga a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1c50a5;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.card-vaga a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    color: #4ea6ff;
+    text-align: center;
+}
